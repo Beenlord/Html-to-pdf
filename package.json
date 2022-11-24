@@ -1,0 +1,18 @@
+{
+  "name": "html-to-pdf",
+  "version": "0.0.3",
+  "main": "program.js",
+  "scripts": {
+    "create": "node program"
+  },
+  "author": "Beenlord",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "node-printer": "^1.0.4",
+    "puppeteer": "^19.3.0"
+  }
+}
