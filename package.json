@@ -3,7 +3,14 @@
   "version": "0.0.3",
   "main": "program.js",
   "scripts": {
-    "create": "node program"
+    "create": "node program",
+    "build": "pkg program.js -t node14-win-x64 --out-path dist/"
+  },
+  "pkg": {
+    "assets": [
+      "static/**/*",
+      "views/**/*"
+    ]
   },
   "author": "Beenlord",
   "dependencies": {
@@ -12,7 +19,7 @@
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "handlebars": "^4.7.7",
-    "node-printer": "^1.0.4",
+    "inquirer": "^8.0.0",
     "puppeteer": "^19.3.0"
   }
 }
